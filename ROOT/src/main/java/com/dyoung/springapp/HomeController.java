@@ -5,10 +5,8 @@ import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.ResponseBody;
 
-/**
- * Handles requests for the application home page.
- */
 @Controller
 public class HomeController {
 	
@@ -20,4 +18,10 @@ public class HomeController {
 		return "index";
 	}
 	
+	@RequestMapping(value = "/alive", method = RequestMethod.GET)
+	@ResponseBody
+	public String alive() {
+		logger.info("Alive!");
+		return "1";
+	}
 }

@@ -1,13 +1,30 @@
 <!DOCTYPE html>
-<html>
+<html style="height: 100%;">
 <head>
 <meta charset="UTF-8">
 <title>Yet Another Sandbox</title>
-<link rel="stylesheet" href="resources/css/bootstrap.min.css"/>
-<link rel="stylesheet" href="resources/css/bootstrap-theme.min.css"/>
+<link rel="stylesheet" href="resources/css/theme/bootstrap.min.css" />
+<link rel="stylesheet" href="resources/css/yasandbox.css" />
 </head>
-<body>
-<h1>Hello World!!</h1>
-<script src="resources/js/bootstrap.min.js"/>
+<body style="height: 100%;">
+  <div class="outer">
+    <div class="middle">
+      <div class="inner">
+        <h1 class="ya text-center">Yet Another Sandbox</h1>
+        <form class="form-inline text-center" role="form">
+          <div class="form-group">
+            <label class="sr-only" for="email">Email address</label> <input type="email" class="form-control" id="email" placeholder="Enter email">
+          </div>
+          <div class="form-group">
+            <label class="sr-only" for="key">Key</label> <input type="text" class="form-control" id="key" placeholder="Enter key">
+          </div>
+          <button type="submit" class="btn btn-primary">Sign in</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script src="resources/js/bootstrap.min.js" />
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js" />
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-beta.5/angular.min.js" />
 </body>
 </html>

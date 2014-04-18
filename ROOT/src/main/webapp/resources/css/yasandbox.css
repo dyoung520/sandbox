@@ -1,0 +1,25 @@
+@CHARSET "UTF-8";
+
+@import url(http://fonts.googleapis.com/css?family=Indie+Flower);
+
+.ya {
+	font-family: 'Indie Flower', cursive;
+}
+
+.outer {
+    display: table;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.middle {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.inner {
+    margin-left: auto;
+    margin-right: auto; 
+    width: /*whatever width you want*/;
+}
