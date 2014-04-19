@@ -30,7 +30,7 @@
 	<bean id="myDataSource" class="org.apache.commons.dbcp.BasicDataSource"
 		destroy-method="close">
 		<property name="driverClassName" value="com.mysql.jdbc.Driver" />
-		<property name="url" value="jdbc:mysql://107.170.98.157:3306/yasandbox" />
+		<property name="url" value="jdbc:mysql://localhost:3306/yasandbox" />
 		<property name="username" value="root" />
 		<property name="password" value="1a1fbc40c66a7802818e150c9cdddd42" />
 		<property name="validationQuery" value="SELECT 1" />

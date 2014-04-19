@@ -10,10 +10,11 @@
 	<http pattern="/resources/css/**" security="none" />
 	<http pattern="/resources/js/**" security="none" />
 	<http pattern="/resources/fonts/**" security="none" />
+	<http pattern="/favicon.ico" security="none" />
 	
 	<http auto-config="true">
 		<intercept-url pattern="/**" access="ROLE_USER" />
-		<form-login login-page="/login" default-target-url="/alive"
+		<form-login login-page="/login" default-target-url="/welcome"
 			authentication-failure-url="/login?error" username-parameter="email"
 			password-parameter="key" />
 		<logout logout-success-url="/login?logout" />
