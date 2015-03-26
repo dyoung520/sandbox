@@ -24,15 +24,15 @@ public class HomeController {
 		return "login";
 	}
 	
-	@RequestMapping(value = "/welcome", method = RequestMethod.GET)
+	@RequestMapping(value = "/", method = RequestMethod.GET)
 	public String welcome() {
 		logger.info("Welcome!");
-		List<Users> users = userDao.findAll();
+		List<User> users = userDao.findAll();
 		
-		for(Users user : users) {
-			logger.info("HERE:" + user.getEmail());
+		for(User user : users) {
+			logger.info("HERE:" + user.getUsername());
 		}
-		
+		System.getProperties().list(System.out);
 		return "welcome";
 	}
 	

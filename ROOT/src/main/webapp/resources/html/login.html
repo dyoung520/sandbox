@@ -11,20 +11,18 @@
     <div class="middle">
       <div class="inner">
         <h1 class="ya text-center">Yet Another Sandbox</h1>
-        <form class="form-inline text-center" action="/j_spring_security_check" role="form" method="POST">
+        <form class="form-inline text-center" action="/j_spring_security_check" data-role="form" method="POST">
           <div class="form-group">
-            <label class="sr-only" for="email">Email</label> <input type="email" class="form-control" id="email" name="email" placeholder="Enter email">
+            <label class="sr-only" for="email">User Name</label> <input type="email" class="form-control" id="email" name="email" placeholder="Enter email">
           </div>
           <div class="form-group">
-            <label class="sr-only" for="key">Key</label> <input type="text" class="form-control" id="key" name="key" placeholder="Enter key">
+            <label class="sr-only" for="key">Password</label> <input type="password" class="form-control" id="key" name="key" placeholder="Enter password">
           </div>
           <button type="submit" class="btn btn-primary">Sign in</button>
         </form>
       </div>
     </div>
   </div>
-  <script src="resources/js/bootstrap.min.js" />
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js" />
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-beta.5/angular.min.js" />
+  <script data-main="resources/js/main" src="resources/js/require.js"></script>
 </body>
 </html>

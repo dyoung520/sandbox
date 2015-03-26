@@ -14,9 +14,9 @@ public class UsersDao {
   @Autowired private SessionFactory sessionFactory;
    
   @Transactional
-  public List<Users> findAll() {
+  public List<User> findAll() {
     Session session = sessionFactory.getCurrentSession();
-    List users = session.createQuery("from Users").list();
+    List users = session.createQuery("from User").list();
     return users;
   }
 }

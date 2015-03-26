@@ -24,15 +24,13 @@
 			<value>.html</value>
 		</property>
 	</bean>
-	<!-- JDBC Data Source. It is assumed you have MySQL running on localhost 
-		port 3306 with username root and blank password. Change below if it's not 
-		the case -->
+
 	<bean id="myDataSource" class="org.apache.commons.dbcp.BasicDataSource"
 		destroy-method="close">
 		<property name="driverClassName" value="com.mysql.jdbc.Driver" />
 		<property name="url" value="jdbc:mysql://127.0.0.1:3306/yasandbox" />
-		<property name="username" value="yasandbox" />
-		<property name="password" value="1a1fbc40c66a7802818e150c9cdddd42" />
+		<property name="username" value="root" />
+		<property name="password" value="cpd3YqFfdz0UDQwpOneA" />
 		<property name="validationQuery" value="SELECT 1" />
 	</bean>
 
